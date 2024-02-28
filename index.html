@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notepad.css">
+    <link rel="stylesheet" href="allnotes_slide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="notepad.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="notes-title">
+                <h3>All notes</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="menu-list">
+                    <ul>
+                        <li>Grid view</li>
+                        <li>Sort by time created</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="allnotes-slide">
+            <div class="header">
+                <p>Notebooks</p>
+            </div>
+            <div class="main">
+                <p>Notebooks</p>
+                <div class="notebook-album">
+                    <div class="first-album">
+                        <div></div>
+                        <label for="">New <br>notebook</label>
+                    </div>
+                    <div class="second-album">
+                        <div></div>
+                        <label for="">All notes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="hidden">
+                    <div>
+                        <i class="fa-regular fa-eye-slash"></i>
+                        <label>Hidden notes</label>
+                    </div>
+                    <i class="fa-solid fa-greater-than"></i>
+
+                </div>
+                <div class="recently">
+                    <div>
+                        <i class="fa-solid fa-trash-can"></i>
+                        <label>Recently deleted</label>
+                    </div>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div id="button">         
+                <button>+</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="notes">
+                <i class="fa-regular fa-note-sticky"></i>
+                <label for="">Notes</label>
+            </div>
+            <div class="todo">
+                <i class="fa-solid fa-calendar-check"></i>
+                <label for="">To-dos</label>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

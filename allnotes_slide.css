@@ -1,0 +1,79 @@
+header .allnotes-slide{
+    position: fixed;
+    bottom: -500px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(57, 55, 55);
+    z-index: 1;
+    border-top: solid 2px rgba(255, 255, 0, 0.789);
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px 20px 20px;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.allnotes-slide .header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+    
+}
+
+.allnotes-slide .header::before{
+    content: "x";
+    position: absolute;
+    left: 0;
+    top: 25%;
+    font-size: 20px;
+}
+
+.allnotes-slide .main{
+    padding-bottom: 50px;
+}
+
+.allnotes-slide .main p{
+    margin-bottom: 15px;
+}
+
+.allnotes-slide .main .notebook-album{
+    display: flex;
+    gap: 40px;
+}
+
+.main .notebook-album .first-album div, .main .notebook-album .second-album div{
+    height: 100px;
+    background-color: blueviolet;
+    width: 130%;
+}
+
+.allnotes-slide .footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(67, 65, 65);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.allnotes-slide .footer .hidden, .allnotes-slide .footer .recently{
+    display: flex;
+    justify-content: space-between;
+}
+
+.allnotes-slide .footer .hidden div, .allnotes-slide .footer .recently div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.allnotes-slide .footer .recently div i{
+    padding-left: 4px;
+}
