@@ -1,20 +1,18 @@
 const menuBar = document.querySelector(".fa-ellipsis-vertical");
 const menuList = document.querySelector(".menu-list");
-const allNotes = document.querySelector(".notes-title h3")
+const allNotes = document.querySelector(".notes-title h3");
 const triangle = document.querySelector(".fa-caret-down");
-const allNotesSlide = document.querySelector(".allnotes-slide")
+const allNotesSlide = document.querySelector(".allnotes-slide");
 
-menuBar.addEventListener("click", () => {
-    if(menuList.style.display == "none"){
-        menuList.style.display = "block";
-    }
-    else{
-        menuList.style.display = "none";
-    }
-})
+// clone slideUp
+const allNotesClone = document.querySelector(".container .notes-title h3");
+const triangleClone = document.querySelector(".container .notes-title .fa-caret-down");
+const menuListClone = document.querySelector(".container .menu .menu-list");
+const menuBarClone = document.querySelector(".container .menu .fa-ellipsis-vertical");
 
-allNotes.addEventListener("click", () => {
+function slideUp(){
     triangle.classList.toggle("rotate");
+    triangleClone.classList.toggle("rotates");
 
     if(allNotesSlide.style.bottom === "0px"){
         allNotesSlide.style.bottom = "-500px";
@@ -22,6 +20,26 @@ allNotes.addEventListener("click", () => {
     else{
         allNotesSlide.style.bottom = "0px";
     }
-    
+}
+
+function menuLists(className){
+    if(className.style.display == "none"){
+        className.style.display = "block";
+    }
+    else{
+        className.style.display = "none";
+    }
+}
+
+menuBarClone.addEventListener("click", () => {
+    menuLists(menuListClone);
 })
+
+
+menuBar.addEventListener("click", () => {
+    menuLists(menuList);
+})
+
+allNotes.addEventListener("click", slideUp);
+allNotesClone.addEventListener("click", slideUp);
 

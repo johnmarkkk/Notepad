@@ -9,19 +9,27 @@ body{
     background-color: rgba(0, 0, 0, 0.829);
 }
 
-header .header .menu{
+.contain{
+    height: 595px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+header .header .menu, .container .menu{
     position: absolute;
     right: 20px;
     top: 10px;
     cursor: pointer;
 }
 
-.header .notes-title{
+.header .notes-title, .container .notes-title{
     padding: 40px 0 0 20px;
     
 }
 
-.header .notes-title h3{
+.header .notes-title h3, .container .notes-title h3{
     display: inline;
     font-size: 30px;
     margin-right: 5px;
@@ -88,7 +96,7 @@ li:hover{
 }
 
 footer{
-    position: absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -106,6 +114,7 @@ footer .footer{
 
 .notes, .todo{
     text-align: center;
+    cursor: pointer;
     
 }
 

@@ -6,27 +6,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="notepad.css">
     <link rel="stylesheet" href="allnotes_slide.css">
+    <link rel="stylesheet" href="cloneheader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="notepad.js" defer></script>
+    <script src="notes_todo_slide.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="contain">
+            <div class="header">
+                <div class="notes-title">
+                    <h3>All notes</h3>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="menu-list">
+                        <ul>
+                            <li>Grid view</li>
+                            <li>Sort by time created</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- clone -->
+        <div class="container">
             <div class="notes-title">
-                <h3>All notes</h3>
+                <h3>To-dos</h3>
                 <i class="fa-solid fa-caret-down"></i>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
                 <div class="menu-list">
                     <ul>
-                        <li>Grid view</li>
-                        <li>Sort by time created</li>
                         <li>Settings</li>
                     </ul>
                 </div>
             </div> 
         </div>
+
         <div class="allnotes-slide">
             <div class="header">
                 <p>Notebooks</p>
@@ -60,8 +80,6 @@
                     </div>
                     <i class="fa-solid fa-greater-than"></i>
                 </div>
-                
-                
             </div>
         </div>
     </header>
@@ -73,7 +91,6 @@
             </div>
         </div>
     </main>
-
     <footer>
         <div class="footer">
             <div class="notes">
