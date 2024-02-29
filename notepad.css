@@ -9,14 +9,6 @@ body{
     background-color: rgba(0, 0, 0, 0.829);
 }
 
-.contain{
-    height: 595px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    transition: 0.5s;
-}
-
 header .header .menu, .container .menu{
     position: absolute;
     right: 20px;
