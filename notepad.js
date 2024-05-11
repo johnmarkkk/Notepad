@@ -20,6 +20,9 @@ function slideUp(){
     else{
         allNotesSlide.style.bottom = "0px";
     }
+
+    menuList.style.display = "none";
+    
 }
 
 function menuLists(className){
